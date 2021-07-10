@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <script src="https://kit.fontawesome.com/a2f1dc21de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="form">
+            <form action=""> 
+                <header>
+                    <h1 class="form__header">Вход</h1>
+                    <a href="reg.html" type="submit" class="form__button_reg">Регистрация</a>
+                </header>
+                <div class="form__item">
+                    <label for="user-icon" class="form__icon">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" class="form__input" placeholder="Имя пользователя">
+                </div>
+                <div class="form__item">
+                    <label for="password-icon" class="form__icon">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" class="form__input" placeholder="Пароль">
+                </div>
+                <button type="submit" class="form__button_login">Войти</button>
+                <footer>
+                    <div class="form__radio">
+                        <input type="radio" class="form__radio_no" id="no" name="remember" value="no" checked>
+                        <label for="no"><i class="fa fa-times"></i></label>  
+                        <input type="radio" class="form__radio_yes" id="yes" name="remember" value="yes">
+                        <label for="yes"><i class="fa fa-check"></i></label>
+                        <span class="form__radio_selection"></span>
+                    </div>
+                    <div class="form__descr_remember">Запомнить меня</div>
+                    <div class="form__descr_forgot">Забыли пароль?</div>
+                </footer>
+            </form>
+        </section>        
+    </div>
+</body>
+</html>

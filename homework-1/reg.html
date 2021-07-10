@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <script src="https://kit.fontawesome.com/a2f1dc21de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="form">
+            <form action="">
+                <header>
+                    <h3 class="form__header">Регистрация</h3>
+                    <a href="index.html" type="submit" class="form__button_reg">Уже есть?</a>
+                </header>
+                <div class="form__item">
+                    <label for="user-icon" class="form__icon">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" class="form__input" placeholder="Имя пользователя">
+                </div>
+                <div class="form__item">
+                    <label for="password-icon" class="form__icon">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" class="form__input" placeholder="Пароль" required>
+                </div>
+                <div class="form__item">
+                    <label for="confirm-icon" class="form__icon">
+                        <i class="fas fa-key"></i>
+                    </label>
+                    <input type="password" class="form__input" placeholder="Подтвердите пароль">
+                </div>
+                <div class="form__item">
+                    <label for="email-icon" class="form__icon">
+                        <i class="fas fa-envelope"></i>
+                    </label>
+                    <input type="email" class="form__input" placeholder="Email-адрес" required>
+                </div>
+                <div class="form__item">
+                    <label for="email-icon" class="form__icon">
+                        <i class="fas fa-venus-mars"></i>
+                    </label>
+                    <select name="gender-select" class="form__select" required>
+                        <option value="">Выберите</option>
+                        <option value="1">Мужчина</option>
+                        <option value="2">Женщина</option>
+                        <option value="3">Конфиденциально</option>
+                    </select>
+                </div>
+                <button type="submit" class="form__button_login">Зарегистрироваться</button>
+                <footer>
+                    <div class="form__radio">
+                        <input type="radio" class="form__radio_no" id="no" name="remember" value="no" checked>
+                        <label for="no"><i class="fa fa-times"></i></label>  
+                        <input type="radio" class="form__radio_yes" id="yes" name="remember" value="yes">
+                        <label for="yes"><i class="fa fa-check"></i></label>
+                        <span class="form__radio_selection"></span>
+                    </div>
+                    <label for="yes" class="form__descr_remember">Запомнить меня</label>
+                </footer>
+            </form>
+        </section>        
+    </div>
+</body>
+</html>
